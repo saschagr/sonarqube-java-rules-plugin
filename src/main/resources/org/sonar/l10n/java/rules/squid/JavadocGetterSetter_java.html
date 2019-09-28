@@ -1,0 +1,29 @@
+<p>This rule detects non documented getter (is/get) and setters</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+public String getFoo() {
+   return this.foo;
+}
+
+public void setFoo(String foo) {
+   this.foo = foo;
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+/**
+ * Get the value of foo.
+ * @return the foo value.
+ */
+public String getFoo() {
+   return this.foo;
+}
+
+/**
+ * Set the value of foo.
+ * @param foo the foo value to set.
+ */
+public void setFoo(String foo) {
+   this.foo = foo;
+}
+</pre>

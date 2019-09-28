@@ -1,0 +1,31 @@
+<p>This rule detects non documented private methods</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+private String doIt() {
+   //do it
+   return "doIt";
+}
+
+private void doItNow(String foo) {
+   //do it now
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+/**
+ * Do it.
+ * @return the result value.
+ */
+private String doIt() {
+   //do it
+   return "doIt";
+}
+
+/**
+ * Do it now and for ever.
+ * @param foo the foo value to the job now.
+ */
+private void doItNow(String foo) {
+   //do it now
+}
+</pre>
