@@ -137,8 +137,8 @@
 				<version>1.17</version>
 				<extensions>true</extensions>
 				<configuration>
-					<pluginKey>java-qs</pluginKey>
-					<pluginName>Java QS Custom Rules</pluginName>
+					<pluginKey>java-mathema-rules</pluginKey>
+					<pluginName>Java MATHEMA Custom Rules</pluginName>
 					<pluginClass>de.mathema.sonarqube.plugin.java.rules.JavaRulesPlugin</pluginClass>
 					<sonarLintSupported>true</sonarLintSupported>
 					<sonarQubeMinVersion>7.9</sonarQubeMinVersion>
