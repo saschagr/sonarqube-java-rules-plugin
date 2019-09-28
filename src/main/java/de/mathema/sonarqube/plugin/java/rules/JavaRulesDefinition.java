@@ -29,13 +29,13 @@ public class JavaRulesDefinition implements RulesDefinition {
    // don't change that because the path is hard coded in CheckVerifier
    private static final String RESOURCE_BASE_PATH = "/org/sonar/l10n/java/rules/squid";
 
-   public static final String REPOSITORY_KEY = "qs-java";
+   public static final String REPOSITORY_KEY = "mathema-java";
 
    private final Gson gson = new Gson();
 
    @Override
    public void define(Context context) {
-      NewRepository repository = context.createRepository(REPOSITORY_KEY, "java").setName("QS Custom Repository");
+      NewRepository repository = context.createRepository(REPOSITORY_KEY, "java").setName("MATHEMA Repository");
 
       for (Class<? extends JavaCheck> check : RulesList.getChecks()) {
          new RulesDefinitionAnnotationLoader().load(repository, check);

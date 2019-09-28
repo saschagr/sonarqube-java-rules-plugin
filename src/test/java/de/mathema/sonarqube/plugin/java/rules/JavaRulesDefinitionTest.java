@@ -20,7 +20,7 @@ public class JavaRulesDefinitionTest {
       rulesDefinition.define(context);
       RulesDefinition.Repository repository = context.repository(JavaRulesDefinition.REPOSITORY_KEY);
 
-      assertThat(repository.name()).isEqualTo("QS Custom Repository");
+      assertThat(repository.name()).isEqualTo("MATHEMA Repository");
       assertThat(repository.language()).isEqualTo("java");
       assertThat(repository.rules()).hasSize(RulesList.getChecks().size());
 
