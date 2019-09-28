@@ -1,0 +1,23 @@
+.reveal .slide.slide-background {
+	background-size: auto;
+	background-image: url("../images/mathema/copyright.svg");
+	background-repeat: no-repeat;
+	background-position: center 104% !important;
+}
+
+.reveal .slide.slide-background.title {
+	background-size: contain, auto;
+	background-repeat: no-repeat, no-repeat;
+	background-image: url("../images/mathema/mathema-header.png"), url("../images/mathema/copyright.svg");
+	background-position: left top, center 83.2% !important;
+}
+
+
+.reveal .slide {
+	padding-top: 30px !important;
+}
+
+.reveal .slide.title {
+	padding-top: 200px !important;
+}
+

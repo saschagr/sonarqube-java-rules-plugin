@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	onload="initCopyRight();"
+	viewBox="0 0 210 100"
+	width="210mm" height="25mm"
+   	version="1.1"
+>
+	<script type="text/ecmascript">
+		//funktioniert nicht als background image, leider
+		function initCopyRight() {
+			var copyrightYear = new Date().getFullYear();
+			var copyright = 'Copyright © '+ copyrightYear + ' MATHEMA Software GmbH'
+			
+			var text = document.getElementById("copyright").firstChild;
+			text.deleteData(0, text.length);
+			text.insertData(0, copyright);
+		}
+	</script>
+   <g style="stroke:none;fill:rgb(0,51,102)">
+    <text id="copyright"
+		y="20"
+		style="color:rgb(0,51,102);font-size:8pt;text-align:center"
+    >Copyright © 2019 MATHEMA Software GmbH</text>
+  </g>
+</svg>

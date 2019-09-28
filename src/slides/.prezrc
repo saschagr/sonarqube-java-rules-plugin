@@ -1,0 +1,9 @@
+{
+	"title":"CI CD",
+	"description":"Dein Code, meine Regeln, mein Sonarqube Plugin - SonarQube Java Rules Plugin",
+	"author":"MATHEMA Software GmbH",
+	"theme":"white",
+	"highlightTheme": "github",
+	"print":"build/sonarqube-java-plugin.folien.pdf",
+	"printTheme":"white"
+}
